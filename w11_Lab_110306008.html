@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>110306008</title>
+</head>
+<body>
+    <script>
+        var inputNum;
+        var num;
+        var ans=Math.floor(Math.random()*10+1);
+        var test=1;        
+        while(test==1){        
+        inputNum=window.prompt("guess num from 1 to 10");
+        num=parseInt(inputNum);
+            if(num==ans){
+                alert('right');
+                test=0;
+            }else if(num>ans){
+                alert('answer is samller');
+            }else if(num<ans){
+                alert('answer is larger');
+            }
+        }
+    </script>
+    <p>press F5 to paly again</p>
+</body>
+</html>
